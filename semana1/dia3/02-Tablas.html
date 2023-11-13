@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        background-color: #444;
+        color: #eee;
+        font-family: sans-serif;
+      }
+
+      code {
+        font-family: consolas;
+        color: yellow;
+      }
+    </style>
+  </body>
+
+  <header>
+    <h1>Tablas</h1>
+    <main>
+      <section>
+        <h2>Filas y Columnas</h2>
+        <p>Las tablas se colocan dentro de una etiqueta <code> table </code></p>
+        <p>Las tablas tienen 3 partes</p>
+        <ul>
+          <li><code>thead</code> : Cabecera</li>
+          <li><code>tbody</code>: Cuerpo</li>
+          <li><code>tfoot</code>: Pie de Tabla</li>
+        </ul>
+      </section>
+      <hr />
+      <section>
+        <h2>Tabla simple</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Cantidad</th>
+              <th>Descripcion</th>
+              <th>P. Unitario</th>
+              <th>P. Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2</td>
+              <td>Teclado mecanicos Fanatic Vanquish</td>
+              <td>200.00</td>
+              <td>400.00</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Monitor Widescreen Samsung</td>
+              <td>800.00</td>
+              <td>800.00</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Monitor HyperX</td>
+              <td>180.00</td>
+              <td>180.00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3" align="center">Total</td>
+              <td>1380.00</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <hr />
+      <section>
+        <h2>Combinando Filas</h2>
+        <p>Para combinar filas se usa el atributo <code> rawspan </code></p>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Categoria</th>
+              <th>Etiquetas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="5">Formulario</td>
+              <td>form</td>
+            </tr>
+            <tr>
+              <td>button</td>
+            </tr>
+            <tr>
+              <td>input</td>
+            </tr>
+            <tr>
+              <td>select</td>
+            </tr>
+            <tr>
+              <td>textarea</td>
+            </tr>
+            <tr>
+              <td rowspan="5">Tabla</td>
+              <td>table</td>
+            </tr>
+            <tr>
+              <td>tr</td>
+            </tr>
+            <tr>
+              <td>th</td>
+            </tr>
+            <tr>
+              <td>td</td>
+            </tr>
+            <tr>
+              <td>caption</td>
+            </tr>
+            <tr>
+              <td rowspan="6">Texto</td>
+              <td>b</td>
+            </tr>
+            <tr>
+              <td>em</td>
+            </tr>
+            <tr>
+              <td>i</td>
+            </tr>
+            <tr>
+              <td>strong</td>
+            </tr>
+            <tr>
+              <td>sub</td>
+            </tr>
+            <tr>
+              <td>sup</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <hr />
+      <section>
+        <h2>Ejercicio</h2>
+        <table border="1">
+          <tbody>
+            <tr>
+              <td rowspan="5">Supermercados "La Vendedora"</td>
+              <td></td>
+              <td>25/04/2011</td>
+            </tr>
+            <tr>
+              <td colspan="2" align="center">N°Fra2456/00</td>
+            </tr>
+            <tr>
+              <td>Cliente :</td>
+              <td rowspan="3">Juan Francisco Redrovan</td>
+            </tr>
+            <tr>
+              <td>RUC</td>
+            </tr>
+            <tr>
+              <td>Direccion</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <hr />
+        <h2>
+          Rehaciendo el ultimo cuadro que hizo el profesor, que por cierto lo
+          hizo incompleto
+        </h2>
+        <table border="1">
+          <tbody>
+            <tr>
+              <td rowspan="5">Supermercadores "La Vendedora"</td>
+              <td></td>
+              <td>25/04/2011</td>
+            </tr>
+            <tr>
+              <td colspan="2" align="center">N°Fra.:2456/00</td>
+            </tr>
+            <tr>
+              <td>Cliente:</td>
+              <td rowspan="1">Juan Francisco Redrovan</td>
+            </tr>
+            <tr>
+              <td>RUC:</td>
+              <td rowspan="1">18004562738</td>
+            </tr>
+            <tr>
+              <td>Direccion:</td>
+              <td rowspan="1">Ambato, Av. Cevallos</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <hr />
+        <h2>Tarea que dejo el profesor</h2>
+        <table border="1">
+          <tbody>
+            <tr>
+              <td rowspan="5">Supermercados "La Vendedora"</td>
+              <td colspan="3"></td>
+              <td>25/04/2011</td>
+            </tr>
+            <tr>
+              <td colspan="4" align="center">N°Fra.:2456/00</td>
+            </tr>
+            <tr>
+              <td colspan="3">Cliente</td>
+              <td rowspan="1">Juan Francisco Redrovan</td>
+            </tr>
+            <tr>
+              <td colspan="3">RUC</td>
+              <td rowspan="1">18004562738</td>
+            </tr>
+
+            <tr>
+              <td colspan="3">Direccion:</td>
+              <td rowspan="1">Ambato, Av. Cevallos</td>
+            </tr>
+            <tr>
+              <td>CODIGO</td>
+              <td>CANTIDAD</td>
+              <td>CONCEPTO</td>
+              <td>PRECIO</td>
+              <td>IMPORTE</td>
+            </tr>
+            <tr>
+              <td>A23</td>
+              <td>20</td>
+              <td>LAPICES</td>
+              <td>25</td>
+              <td>500</td>
+            </tr>
+            <tr>
+              <td>A45</td>
+              <td>100</td>
+              <td>BORRADORES</td>
+              <td>10</td>
+              <td>1000</td>
+            </tr>
+            <tr>
+              <td colspan="3"></td>
+              <td>Importe</td>
+              <td>1500</td>
+            </tr>
+            <tr>
+              <td colspan="3"></td>
+              <td>Descuento</td>
+              <td>75</td>
+            </tr>
+            <tr>
+              <td colspan="3"></td>
+              <td>Base imponible</td>
+              <td>1425</td>
+            </tr>
+            <tr>
+              <td colspan="3"></td>
+              <td>IVA</td>
+              <td>228</td>
+            </tr>
+            <tr>
+              <td colspan="4" align="center">TOTAL FACTURA</td>
+
+              <td>1653</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </header>
+</html>
